@@ -1,0 +1,167 @@
+:root{
+    --Bule: #5243C2 ;
+}
+
+/* header */
+header{
+    padding: 30px 0;
+}
+header .container{
+    display: flex;
+    justify-content: space-between ;
+    align-items: center;
+}
+header h4{
+    color: var(--Bule);
+    padding: 20px;
+    border-radius: 50%;
+    background-color: #f1eeee ;
+    display: inline-block;
+}
+header .list ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+header .list ul li{
+    list-style: none;
+    padding: 10px;
+    position: relative;
+    cursor: pointer;
+}
+header .list ul li:before{
+    content: '';
+    content: '';
+    position: absolute;
+    left: 10px;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background: var(--Bule);
+    transition: 0.3s;
+}
+header .list ul li:hover::before{
+    width: calc(100% - 20px);
+}
+/* end header */
+
+
+/* main */
+main{
+    margin-bottom: 60px;
+}
+
+main .row{
+    height:auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+main .row .text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+main .row .imageBox{
+    text-align: center;
+}
+main .row .imageBox button{
+    position: absolute;
+    top: 35%;
+    left: 35%;
+    background: var(--Bule);
+    color: white;
+    border: none;
+    padding: 20px;
+    border-radius: 50%;
+    font-size: 30px;
+    font-family: cursive;
+    font-weight: lighter;
+}
+main .row .imageBox button a{
+    color: white;
+    text-decoration: none;
+}
+
+/* end main */
+
+footer{
+    padding: 30px 0;
+}
+footer .row{
+    margin-bottom: 50px;
+}
+footer .imageBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+footer .imageBox img{
+    width: 230px;
+}
+footer .imageBox .imageInsinde{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+footer .imageBox .imageInsinde img{
+    height: 40px;
+}
+footer .cost{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+footer .cost h5{
+    color: var(--Bule);
+    font-weight: 700;
+    font-size: 28px;
+    padding: 20px;
+}
+footer .cost button{
+    color: white;
+    background-color: var(--Bule);
+    border: none;
+    padding: 10px 30px;
+    border-radius: 15px;
+    outline: none;
+}
+footer .downPart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+footer .downPart .box{
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+footer .downPart .box img{
+    width: 75px;
+}
+footer .downPart .box button{
+    outline: none;
+    border: 1px solid var(--Bule);
+    width: 25px;
+    border-radius: 10px;
+    font-size: 17.5px;
+    color: white;
+    background-color: var(--Bule);
+    cursor: pointer;
+    text-align: center;
+}
+footer .downPart .box p{
+    text-transform: capitalize;
+    display: inline-block;
+}
