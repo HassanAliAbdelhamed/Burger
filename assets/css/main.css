@@ -104,6 +104,20 @@ footer .imageBox{
     align-items: center;
     flex-direction: column;
 }
+footer .imageBox .up img{
+    position: relative;
+    z-index: 100;
+    /* margin-bottom: -25px; */
+    transition: 1s;
+}
+footer .imageBox .down img{
+    position: relative;
+    z-index: -100;
+    /* margin-top: -10px; */
+    transition: 1s;
+}
+
+
 footer .imageBox img{
     width: 230px;
 }
@@ -116,8 +130,8 @@ footer .imageBox .imageInsinde{
 footer .imageBox .imageInsinde img{
     height: 40px;
     margin-bottom: -10px;
-    position:relative;
-    transition: .3s;
+    position: relative;
+    transition: 1s;
 }
 footer .cost{
     display: flex;

@@ -13,3 +13,15 @@ plus.forEach(ele => {
         
     }
 });
+
+let total = document.querySelector('.total');
+total.onclick = ()=>{
+    let up = document.querySelector('footer .imageBox .up img');
+    let middle = document.querySelectorAll('footer .imageBox .imageInsinde img');
+    let down = document.querySelector('footer .imageBox .down img');
+    up.style.marginBottom ="-25px";
+    middle.forEach(ele => {
+        ele.style.marginBottom ="-27px";
+    });   
+    down.style.marginBottom ="-13px";
+}
