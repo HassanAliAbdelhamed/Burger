@@ -3,9 +3,11 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Make your burger</title>
+        <title>Make Your Burger</title>
         <link rel="stylesheet" href="assets/css/main.css">
         <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="shortcut icon" href="assets/img/icon.png" type="image/x-icon">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     </head>
     <body>
             <header>
@@ -15,38 +17,32 @@
                         </div>
                         <div class="list">
                             <ul>
-                                <li>Discover</li>
-                                <li>Make Your Burger</li>
-                            </ul>
+                                <a href="#discover" style="text-decoration: none; color: black;"><li>Discover</li></a>
+                                <a href="#makeBurger" style="text-decoration: none; color: black;"><li>Make Your Burger</li></a>                            </ul>
                         </div>
                     </div>
             </header>
 
-            <main class="container">
+            <main class="container" id="discover">
                 <div class="row">
                     <div class="text col-12 col-lg-5">
                         <h1>Make <br>Your <br>Burger </h1>
                     </div>
                     <div class="imageBox col-12 col-lg-7">
-                        <button><a href="">Make <br> Burger</a></button>
-                        <img src="assets/img/main.PNG" style="max-width: 100%;" alt="..">
+                        <button><a href="#makeBurger">Make <br> Burger</a></button>
+                        <img src="assets/img/main.png" style="max-width: 100%;" alt="..">
                     </div>
                 </div>
             </main>
             
 
-            <footer class="container">
+            <footer class="container" id="makeBurger">
                 <div class="row">
                     <div class="imageBox col-12 col-lg-7">
                         <div class="up">
                             <img src="assets/img/burger atoms/bun_top.png" alt="">
                         </div>
                         <div class="imageInsinde">
-                            <img src="assets/img/burger atoms/mayo.png" alt="">
-                            <img src="assets/img/burger atoms/cheese.png" alt="">
-                            <img src="assets/img/burger atoms/cucumber.png" alt="">
-                            <img src="assets/img/burger atoms/cutlet.png" alt="">
-                            <img src="assets/img/burger atoms/onion.png" alt="">
                         </div>
                         <div class="down">
                             <img src="assets/img/burger atoms/bun_bottom.png" alt="">
@@ -66,9 +62,9 @@
                         <img src="assets/img/burger atoms/cutlet.png" alt="">
                         <p>cutlet</p>
                         <div>
-                            <button>+</button>
+                            <button class="cutlet" id="plus">+</button>
                             <p>0</p>
-                            <button>-</button>
+                            <button class="cutlet">-</button>
                         </div>
                     </div>
 
@@ -76,9 +72,9 @@
                         <img src="assets/img/burger atoms/bun_middle.png" alt="">
                         <p>bun</p>
                         <div>
-                            <button>+</button>
+                            <button class="bun_middle" id="plus">+</button>
                             <p>0</p>
-                            <button>-</button>
+                            <button class="bun_middle">-</button>
                         </div>
                     </div>
 
@@ -86,9 +82,9 @@
                         <img src="assets/img/burger atoms/cheese.png" alt="">
                         <p>cheese</p>
                         <div>
-                            <button>+</button>
+                            <button class="cheese" id="plus">+</button>
                             <p>0</p>
-                            <button>-</button>
+                            <button class="cheese">-</button>
                         </div>
                     </div>
 
@@ -96,9 +92,9 @@
                         <img src="assets/img/burger atoms/cucumber.png" alt="">
                         <p>cucumber</p>
                         <div>
-                            <button>+</button>
+                            <button class="cucumber" id="plus">+</button>
                             <p>0</p>
-                            <button>-</button>
+                            <button class="cucumber">-</button>
                         </div>
                     </div>
 
@@ -106,9 +102,9 @@
                         <img src="assets/img/burger atoms/mayo.png" alt="">
                         <p>mayo</p>
                         <div>
-                            <button>+</button>
+                            <button class="mayo" id="plus">+</button>
                             <p>0</p>
-                            <button>-</button>
+                            <button class="mayo">-</button>
                         </div>
                     </div>
 
@@ -116,19 +112,19 @@
                         <img src="assets/img/burger atoms/onion.png" alt="">
                         <p>onion</p>
                         <div>
-                            <button>+</button>
+                            <button class="onion" id="plus">+</button>
                             <p>0</p>
-                            <button>-</button>
+                            <button class="onion">-</button>
                         </div>
                     </div>
 
                     <div class="box">
-                        <img src="assets/img/burger atoms/onion.png" alt="">
-                        <p>onion</p>
+                        <img src="assets/img/burger atoms/tomatoe.png" alt="">
+                        <p>tomatoe</p>
                         <div>
-                            <button>+</button>
+                            <button class="tomatoe" id="plus">+</button>
                             <p>0</p>
-                            <button>-</button>
+                            <button class="tomatoe">-</button>
                         </div>
                     </div>
 
@@ -136,16 +132,42 @@
                         <img src="assets/img/burger atoms/salad.png" alt="">
                         <p>salad</p>
                         <div>
-                            <button>+</button>
+                            <button class="salad" id="plus">+</button>
                             <p>0</p>
-                            <button>-</button>
+                            <button class="salad">-</button>
                         </div>
                     </div>
                 </div>
 
             </footer>
 
+
+
+            <div class="footer">
+                <div class="row">
+                    <div class="col-12 col-lg-6">
+                        <h3>ea</h3>
+                    </div>
+                    <div class="col-12 col-lg-6 icons">
+                        <div class="d-flex justify-content-center fs-2 gap-4">
+                            <a href="#"  rel="noopener noreferrer">
+                                <i class="fab fa-facebook-f"></i>
+                              </a>
+                            
+                            <a href="#"  rel="noopener noreferrer">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+
+                            <a href="#"  rel="noopener noreferrer">
+                                <i class="fab fa-twitter"></i>
+                            </a>    
+
+                        </div>
+                    </div>
+                </div>
+            </div>
     </body>
-    <script src="assets/js/main.css"></script>
+    
     <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/main.js"></script>
     </html>

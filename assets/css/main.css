@@ -2,6 +2,9 @@
     --Bule: #5243C2 ;
 }
 
+html{
+    scroll-behavior: smooth;
+}
 /* header */
 header{
     padding: 30px 0;
@@ -17,6 +20,7 @@ header h4{
     border-radius: 50%;
     background-color: #f1eeee ;
     display: inline-block;
+    font-family: cursive;
 }
 header .list ul{
     display: flex;
@@ -107,10 +111,11 @@ footer .imageBox .imageInsinde{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    flex-direction: column-reverse;
 }
 footer .imageBox .imageInsinde img{
     height: 40px;
+    margin-bottom: -10px;
 }
 footer .cost{
     display: flex;
@@ -164,4 +169,30 @@ footer .downPart .box button{
 footer .downPart .box p{
     text-transform: capitalize;
     display: inline-block;
+}
+
+.footer .row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    text-align: center;
+    height: 250px;
+    background: var(--Bule);
+    color: white;
+    max-width: 100%;
+    margin: 0;
+}
+.footer h3{
+    color: var(--Bule);
+    padding: 20px;
+    border-radius: 50%;
+    background-color: #f1eeee;
+    display: inline-block;
+    font-family: cursive;
+}
+.footer .icons i{
+    color: white;
+    font-size: 25px;
+    padding: 13px;
 }
