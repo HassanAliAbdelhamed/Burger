@@ -9,6 +9,7 @@ plus.forEach(ele => {
         let img = document.createElement("img");
         img.src = imgSrc;
         img.alt = className;
+        img.id = className
         imageInsinde.appendChild(img);
         
     }
@@ -19,9 +20,15 @@ total.onclick = ()=>{
     let up = document.querySelector('footer .imageBox .up img');
     let middle = document.querySelectorAll('footer .imageBox .imageInsinde img');
     let down = document.querySelector('footer .imageBox .down img');
+    let cheese = document.getElementById('cheese');
+    let mayo = document.getElementById('mayo');
+    
     up.style.marginBottom ="-25px";
     middle.forEach(ele => {
         ele.style.marginBottom ="-27px";
     });   
+    cheese.style="margin-bottom : -45px";
+    mayo.style.marginBottom = '-35px';
     down.style.marginBottom ="-13px";
+    
 }
