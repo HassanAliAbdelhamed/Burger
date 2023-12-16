@@ -1,17 +1,29 @@
 let imageInsinde = document.querySelector('.imageInsinde');
 let plus = document.querySelectorAll('#plus');
+let min = document.querySelectorAll('#min');
+
 
 plus.forEach(ele => {
     ele.onclick=()=>{
         let className = ele.className ;
-        console.log(className);
         let imgSrc=`assets/img/burger atoms/${className}.png`
         let img = document.createElement("img");
         img.src = imgSrc;
         img.alt = className;
         img.id = className
         imageInsinde.appendChild(img);
+        let para = document.getElementById(`${className}-p`)
+        para.textContent = parseInt(para.textContent)+ 1;
         
+    }
+});
+min.forEach(ele => {
+    ele.onclick = ()=>{
+    let className = ele.className;    
+    let image = document.getElementById(className);
+    imageInsinde.removeChild(image);
+    let para = document.getElementById(`${className}-p`)
+    para.textContent = parseInt(para.textContent)- 1;
     }
 });
 
@@ -43,5 +55,4 @@ total.onclick = ()=>{
     });
 
     down.style.marginBottom ="-13px";
-    
 }
