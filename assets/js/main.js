@@ -1,9 +1,14 @@
+let list = [5 , 2 , 1.5 , .5 , 1 , .5 , .5 , .5]
+
+let done = document.querySelector('.done');
 let imageInsinde = document.querySelector('.imageInsinde');
 let plus = document.querySelectorAll('#plus');
 let min = document.querySelectorAll('#min');
+let totalSpan = document.querySelector('.totalSpan');
+let total = document.querySelector('.total');
 
 
-plus.forEach(ele => {
+plus.forEach((ele , index) => {
     ele.onclick=()=>{
         let className = ele.className ;
         let imgSrc=`assets/img/burger atoms/${className}.png`
@@ -14,20 +19,26 @@ plus.forEach(ele => {
         imageInsinde.appendChild(img);
         let para = document.getElementById(`${className}-p`)
         para.textContent = parseInt(para.textContent)+ 1;
-        
-    }
-});
-min.forEach(ele => {
-    ele.onclick = ()=>{
-    let className = ele.className;    
-    let image = document.getElementById(className);
-    imageInsinde.removeChild(image);
-    let para = document.getElementById(`${className}-p`)
-    para.textContent = parseInt(para.textContent)- 1;
+        console.log(list[index]);
+        totalSpan.textContent = parseFloat(totalSpan.textContent) +list[index];
     }
 });
 
-let total = document.querySelector('.total');
+
+min.forEach((ele , index) => {
+    ele.onclick = ()=>{
+    let className = ele.className;    
+    let images = document.querySelectorAll(`#${className}`);
+    let para = document.getElementById(`${className}-p`)
+    para.textContent = parseInt(para.textContent)- 1;
+    let lastIndex = images.length -1 ;
+    imageInsinde.removeChild(images[lastIndex])
+    totalSpan.textContent = parseFloat(totalSpan.textContent) -list[index];
+
+    }
+});
+
+
 total.onclick = ()=>{
     let up = document.querySelector('footer .imageBox .up img');
     let middle = document.querySelectorAll('footer .imageBox .imageInsinde img');
@@ -55,4 +66,13 @@ total.onclick = ()=>{
     });
 
     down.style.marginBottom ="-13px";
+
+    setTimeout(() => {
+        done.style.display = "block";
+    }, 2000);
 }
+
+done.onclick = ()=>{
+    location.reload();
+}
+
