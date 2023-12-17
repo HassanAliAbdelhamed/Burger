@@ -32,7 +32,7 @@ min.forEach((ele , index) => {
     let para = document.getElementById(`${className}-p`)
     let lastIndex = images.length -1 ;
     imageInsinde.removeChild(images[lastIndex])
-        if(para.textContentt =! 0 ){
+        if(para.textContentt =! "0" ){
                 para.textContent = parseInt(para.textContent)- 1;
                 totalSpan.textContent = parseFloat(totalSpan.textContent) -list[index];
         }
