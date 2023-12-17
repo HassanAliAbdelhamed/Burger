@@ -33,7 +33,9 @@ min.forEach((ele , index) => {
     para.textContent = parseInt(para.textContent)- 1;
     let lastIndex = images.length -1 ;
     imageInsinde.removeChild(images[lastIndex])
-    totalSpan.textContent = parseFloat(totalSpan.textContent) -list[index];
+        if(totalSpan.textContent =! 0 ){
+                totalSpan.textContent = parseFloat(totalSpan.textContent) -list[index];
+        }
 
     }
 });
