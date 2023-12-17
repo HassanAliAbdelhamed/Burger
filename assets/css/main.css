@@ -103,20 +103,10 @@ footer .imageBox{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    position: relative;
 }
 
-footer .imageBox::before{
-    content:'❤️'
-    display: none;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 24px;
-    color: red;
-    animation: heartbeat 1s infinite;
-    
-}
+
 footer .imageBox .up img{
     position: relative;
     z-index: 100;
@@ -225,16 +215,4 @@ footer .downPart .box p{
     color: white;
     font-size: 25px;
     padding: 13px;
-}
-
-@keyframes heartbeat {
-      0% {
-        transform: scale(1);
-      }
-      50% {
-        transform: scale(1.2);
-      }
-      100% {
-        transform: scale(1);
-      }
 }

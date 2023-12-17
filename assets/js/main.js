@@ -74,8 +74,8 @@ total.onclick = ()=>{
     down.style.marginBottom ="-13px";
 
     setTimeout(() => {
-        done.style.display = "block";
-    }, 2000);
+        location.reload()
+    }, 2500);
 }
 
 done.onclick = ()=>{
