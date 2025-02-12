@@ -13,7 +13,6 @@ This is a website where you can create your own burger 😊🍔.
 2. CSS3
 3. Javascript
 4. Bootstrap
-5. React.js
 
 ## Contributing
 We welcome any and all contributions! Here are some ways you can get started:
